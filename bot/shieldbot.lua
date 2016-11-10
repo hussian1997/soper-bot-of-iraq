@@ -211,68 +211,106 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "admin",
-    "onservice",
-    "inrealm",
-    "ingroup",
-    "inpm",
-    "banhammer",
-    "stats",
-    "anti_spam",
-    "owners",
-    "arabic_lock",
-    "set",
-    "get",
-    "broadcast",
-    "invite",
-    "all",
-    "leave_ban",
-    "supergroup",
-    "whitelist",
-    "msg_checks",
-    "plugins",
-    "addplugin",
-    "filter",
-    "linkpv",
-    "lock_emoji",
-    "lock_english",
-    "lock_fosh",
-    "lock_fwd",
-    "lock_join",
-    "lock_media",
-    "lock_operator",
-    "lock_username",
-    "lock_tag",
-    "lock_reply",
-    "rmsg",
-    "send",
-    "set_type",
-    "welcome",
-    "sh",
-    "serverinfo"
+   "4",  
+"APICLI",  
+"addbot1",  
+"admin",  
+"all",  
+"anti-spam", 
+"anti_media",
+"ar-azan",  
+"ar-badword",  
+"ar-banhammmer",  
+"ar-broadcast", 
+"ar-getfile", 
+"ar-h1",  
+"ar-h2",  
+"ar-h3",  
+"ar-lock-bot", 
+"ar-lock-ffwd", 
+"ar-map",  
+"ar-superrgroup (1)",  
+"ar-weather",  
+"arabic_lock",  
+"auto_run",  
+"azan",  
+"banhammer",  
+"broadcast",  
+"bye",  
+"dobye",  
+"dowelcome",  
+"echo", 
+"filter",  
+"get",  
+"help",   
+"helps.pv",  
+"image23", 
+"infoeng",  
+"ingroup",
+"inpm",  
+"inrealm",  
+"instagram", 
+"invite",  
+"leave_ban",  
+"linkpv", 
+"list",  
+"list3", 
+"listt1",  
+"lock_badword",  
+"lock_emoji",  
+"lock_english",  
+"lock_fwwd",  
+"lock_join",  
+"lock_reply",  
+"lock_tag",  
+"lock_username", 
+"meee12",  
+"msg_checks",  
+"music_eng",  
+"onservice",  
+"owners",  
+"plugins",  
+"rdod",
+"rebot",  
+"rediss",  
+"reply",  
+"send",  
+"serverinfo",  
+"set",  
+"set_type",  
+"short_link",  
+"stats",  
+"sticker23",  
+"sudolist",  
+"super",  
+"tag_english",  
+"textphoto", 
+"time",  
+"translate",  
+"voice",  
+"weather", 
+"welecam",  
+"whitelist", 
+"writer",
+"weather",
+"ar-h4",
+"car" 
     },
-    sudo_users = {80182995},--Sudo users
+    sudo_users = {73928866,250180860,177659243},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[MeGa shield v2.9
 An advanced administration bot based on TG-CLI written in Lua
 
 Github:
-https://github.com/hafez16/mega-shield
-
+https://github.com/hussian1997/soper-bot-of-iraq
+		
 Admins:
-@hafez1116hafez [Developer]
-@amirho3ien911 [Developer]
-@Eblis_alone [Manager]
-@Mmd_hei [sponsor]
-
-Special thanks to
-SEEDTEAM
-Hextor team
-Magic team
-Avira team
+@AHMED_ALOBIDE [Developer]
+@hussian_9 [Developer]
+@Tiq_ll [Manager]
 
 Our channels
-@shieldTM [persian]
+@Xn_xx11 [persian]
 ]],
     help_text_realm = [[
 Realm Commands:
