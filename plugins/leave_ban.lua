@@ -1,11 +1,20 @@
+--[[ 
+▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
+▀▄ ▄▀                                      ▀▄ ▄▀ 
+▀▄ ▄▀     BY(@AHMED_ALOBIDE)               ▀▄ ▄▀ 
+▀▄ ▄▀      BY(@hussian_9)                  ▀▄ ▄▀ 
+▀▄ ▄▀                                      ▀▄ ▄▀   
+▀▄ ▄▀                                      ▀▄ ▄▀ 
+▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
+--]]
 local function run(msg, matches)
 	local data = load_data(_config.moderation.data)
 	if msg.action and msg.action.type then
 	local action = msg.action.type 
     if data[tostring(msg.to.id)] then
 		if data[tostring(msg.to.id)]['settings'] then
-			if data[tostring(msg.to.id)]['settings']['leave'] then 
-				leave_ban = data[tostring(msg.to.id)]['settings']['leave']
+			if data[tostring(msg.to.id)]['settings']['leave_ban'] then 
+				leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
 			end
 		end
     end
@@ -24,4 +33,3 @@ return {
   },
   run = run
 }
--- :-)
